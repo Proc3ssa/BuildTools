@@ -1,2 +1,12 @@
 $primary-color: #4a90e2;
 $font-stack: 'Segoe UI', sans-serif;
+
+// Light Theme
+$light-background: #f9f9f9;
+$light-text: #333;
+$light-accent: $primary-color;
+
+// Dark Theme
+$dark-background: #333;
+$dark-text: #f9f9f9;
+$dark-accent: $primary-color;

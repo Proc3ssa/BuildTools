@@ -15,6 +15,6 @@ function toggleTheme() {
 
 document.addEventListener('DOMContentLoaded', () => {
   setInitialTheme();
-  const btn = document.getElementById('theme-toggle');
-  btn?.addEventListener('click', toggleTheme);
+  const checkbox = document.getElementById('theme-toggle-checkbox') as HTMLInputElement;
+  checkbox?.addEventListener('change', toggleTheme);
 });
