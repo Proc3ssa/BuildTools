@@ -1,2 +1,25 @@
 $primary-color: #4a90e2;
 $font-stack: 'Segoe UI', sans-serif;
+
+// Light Theme
+$light-background: #f9f9f9;
+$light-text: #333;
+$light-accent: $primary-color;
+$light-bg-clocks: #e2e9e6;
+
+// Dark Theme
+$dark-background: #333;
+$dark-text: #f9f9f9;
+$dark-accent: $primary-color;
+
+// Clocks Background
+$light-bg-clocks: #eee;
+$dark-bg-clocks: #1ad629;
+
+$clock-bg-dark: #2b2a2a;
+
+
+$text-center: center;
+
+$clock-color-light: rgb(8, 82, 107);
+$clock-color-dark: green;

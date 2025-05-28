@@ -1,7 +1,7 @@
 import './styles/main.scss';
 
 function setInitialTheme() {
-  // Set default theme to light
+  // Always start with light theme
   document.body.classList.add('theme-light');
 }
 
@@ -15,6 +15,6 @@ function toggleTheme() {
 
 document.addEventListener('DOMContentLoaded', () => {
   setInitialTheme();
-  const btn = document.getElementById('theme-toggle');
-  btn?.addEventListener('click', toggleTheme);
+  const checkbox = document.getElementById('theme-toggle-checkbox') as HTMLInputElement;
+  checkbox?.addEventListener('change', toggleTheme);
 });
