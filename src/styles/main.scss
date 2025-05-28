@@ -49,9 +49,8 @@ main{
   background-color: $dark-background;
   color: $dark-text;
 
-  #app {
-    background-color: $dark-background;
-    color: $dark-text;
+  .clocks {
+    background-color: $clock-bg-dark;
   }
 }
 
