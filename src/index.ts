@@ -1,7 +1,7 @@
 import './styles/main.scss';
 
 function setInitialTheme() {
-  // Set default theme to light
+  // Always start with light theme
   document.body.classList.add('theme-light');
 }
 

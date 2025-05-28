@@ -7,6 +7,11 @@ body {
   margin: 0;
   padding: 0;
   transition: background-color 0.3s, color 0.3s;
+
+  main, header{
+    width: 80%;
+    margin-inline: auto;
+  }
 }
 
 .theme-light {
@@ -27,4 +32,16 @@ body {
     background-color: #121212;
     color: #f0f0f0;
   }
+}
+
+header{
+  @include flex-space-between;
+
+  img{
+    width: 100px;
+  }
+}
+.logo{
+  @include flex-space-between;
+  
 }
