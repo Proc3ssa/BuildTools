@@ -23,6 +23,10 @@ main{
     text-align: $text-center;
   }
 
+  .clocks h2 {
+    font-family: 'Segment7 Standard', monospace;
+  }
+
   .clocks{
     @include flex-space-between;
     flex-wrap: wrap;
@@ -32,6 +36,10 @@ main{
     border-radius: 10px;
     margin-inline: auto;
     padding: 20px;
+
+    .clock{
+      text-align: center;
+    }
   }
 }
 
@@ -51,20 +59,29 @@ main{
 
   .clocks {
     background-color: $clock-bg-dark;
+
+    h2 {
+      color: $clock-color-dark;
+    }
   }
 }
 
 .theme-light {
   .clocks {
     background-color: $light-bg-clocks;
+
+    h2 {
+      color: $clock-color-light;
+    }
   }
 }
 
 header{
   @include flex-space-between;
+  margin-top: 60px;
 
   img{
-    width: 100px;
+    width: 70px;
   }
 }
 .logo{
@@ -126,4 +143,5 @@ input:checked + .theme-toggle-label:before {
 
 footer{
   @include flex-center;
+  margin-top: 90px;
 }
