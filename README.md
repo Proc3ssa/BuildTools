@@ -79,7 +79,17 @@ npm run test
 ---
 
 ## 📂 Folder Structure
+
+
 ```
+src/
+  └── styles/
+      └── _base.scss
+      └── _mixins.scss
+      └── _variables.scss
+      └── main.scss
+  └── test/
+  └── index.ts
 public/
   └── index.html
   └── assets/
@@ -87,13 +97,6 @@ public/
           └── favicon.png
           └── volume-off-svgrepo-com.svg
           └── volume-up-svgrepo-com.svg
-src/
-  └── index.ts
-  └── styles/
-      └── _base.scss
-      └── _mixins.scss
-      └── _variables.scss
-      └── main.scss
 .babelrc
 .eslintignore
 .eslintrc.json
