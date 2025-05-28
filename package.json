@@ -3,12 +3,12 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack serve",
-    "build": "webpack --mode production",
-    "lint": "eslint src --ext .ts",
-    "format": "prettier --write \"src/**/*.{ts,scss}\"",
-    "check": "npm run lint && npm run format",
-    "precommit": "npm run check",
+     "dev": "webpack serve --config webpack.dev.js",
+  "build": "webpack --config webpack.prod.js",
+  "lint": "eslint src --ext .ts",
+  "format": "prettier --write \"src/**/*.{ts,scss}\"",
+  "check": "npm run lint && npm run format",
+  "precommit": "npm run check",
     "test": "jest"
   },
   "keywords": [],
@@ -16,7 +16,10 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "@babel/core": "^7.27.3",
+    "@babel/preset-env": "^7.27.2",
     "@eslint/js": "^9.27.0",
+    "babel-loader": "^10.0.0",
     "css-loader": "^7.1.2",
     "eslint": "^9.27.0",
     "eslint-config-prettier": "^10.1.5",
@@ -34,10 +37,9 @@
     "webpack-cli": "^6.0.1",
     "webpack-dev-server": "^5.2.1"
   },
-
   "husky": {
-  "hooks": {
-    "pre-commit": "npm run precommit"
+    "hooks": {
+      "pre-commit": "npm run precommit"
+    }
   }
-}
 }
