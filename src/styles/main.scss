@@ -1,0 +1,30 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+@use 'base';
+
+body {
+  font-family: $font-stack;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.theme-light {
+  background-color: #ffffff;
+  color: #121212;
+
+  #app {
+    background-color: #ffffff;
+    color: #121212;
+  }
+}
+
+.theme-dark {
+  background-color: #121212;
+  color: #f0f0f0;
+
+  #app {
+    background-color: #121212;
+    color: #f0f0f0;
+  }
+}
