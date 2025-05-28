@@ -79,17 +79,42 @@ npm run test
 ---
 
 ## 📂 Folder Structure
-
 ```
+public/
+  └── index.html
+  └── assets/
+      └── images/
+          └── favicon.png
+          └── volume-off-svgrepo-com.svg
+          └── volume-up-svgrepo-com.svg
 src/
+  └── index.ts
   └── styles/
-  └── utils/
-tests/
+      └── _base.scss
+      └── _mixins.scss
+      └── _variables.scss
+      └── main.scss
+.babelrc
+.eslintignore
+.eslintrc.json
+.gitignore
+.prettierignore
+.prettierrc.json
+CODE_QUALITY_REPORT.md
+eslint.config.mjs
+jest.config.js
+package-lock.json
+package.json
+README.md
+tsconfig.json
+webpack.common.js
+webpack.config.js
 webpack.dev.js
 webpack.prod.js
-webpack.common.js
-tsconfig.json
-.babelrc
-.eslintrc.json
 ```
+
+### Author: 
+- [Github] [Proc3ssa](https://github.com/Proc3ssa)
+- [ X ] [P R O C E S S O R](https://github.com/Proc3ssa)
+  
 
