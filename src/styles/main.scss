@@ -7,6 +7,7 @@ body {
   margin: 0;
   padding: 0;
   transition: background-color 0.3s, color 0.3s;
+  max-width: 1000px;
 
   main, header{
     width: 80%;
@@ -21,6 +22,10 @@ main{
 
   h1{
     text-align: $text-center;
+     @include arabic-text;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: $light-accent;
   }
 
   .clocks h2 {
@@ -83,6 +88,8 @@ header{
   img{
     width: 70px;
   }
+
+  
 }
 .logo{
   @include flex-space-between;
@@ -144,4 +151,25 @@ input:checked + .theme-toggle-label:before {
 footer{
   @include flex-center;
   margin-top: 90px;
+}
+
+@media screen and (max-width: 600px) {
+  main, header{
+    width: 90%;
+  }
+
+  main h1{
+    display: none;
+  }
+
+  .clocks {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .clock {
+    margin-bottom: 20px;
+  }
+  
 }
