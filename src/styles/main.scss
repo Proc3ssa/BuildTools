@@ -14,23 +14,50 @@ body {
   }
 }
 
+main{
+  
+  @include flex-column;
+
+
+  h1{
+    text-align: $text-center;
+  }
+
+  .clocks{
+    @include flex-space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+    width:80%;
+    border-radius: 10px;
+    margin-inline: auto;
+    padding: 20px;
+  }
+}
+
 .theme-light {
-  background-color: #ffffff;
-  color: #121212;
+  background-color: $light-background;
+  color: $light-text;
 
   #app {
-    background-color: #ffffff;
-    color: #121212;
+    background-color: $light-background;
+    color: $light-text;
   }
 }
 
 .theme-dark {
-  background-color: #121212;
-  color: #f0f0f0;
+  background-color: $dark-background;
+  color: $dark-text;
 
   #app {
-    background-color: #121212;
-    color: #f0f0f0;
+    background-color: $dark-background;
+    color: $dark-text;
+  }
+}
+
+.theme-light {
+  .clocks {
+    background-color: $light-bg-clocks;
   }
 }
 
@@ -45,6 +72,7 @@ header{
   @include flex-space-between;
   
 }
+
 
 .theme-toggle-container {
   position: relative;
@@ -95,6 +123,8 @@ input:checked + .theme-toggle-label:before {
   transform: translateX(26px);
 }
 
+
+
 footer{
-  @include space-center
+  @include flex-center;
 }

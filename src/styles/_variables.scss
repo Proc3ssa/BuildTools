@@ -5,8 +5,17 @@ $font-stack: 'Segoe UI', sans-serif;
 $light-background: #f9f9f9;
 $light-text: #333;
 $light-accent: $primary-color;
+$light-bg-clocks: #e2e9e6;
 
 // Dark Theme
 $dark-background: #333;
 $dark-text: #f9f9f9;
 $dark-accent: $primary-color;
+
+// Clocks Background
+$light-bg-clocks: #eee;
+$dark-bg-clocks: #222;
+$dark-bg-clocks: #141414;
+
+
+$text-center: center;
