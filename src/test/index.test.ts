@@ -1,15 +1,29 @@
-describe("Theme change", () => {
 
-  test("should toggle theme from light to dark", () => {
+import { setInitialTheme, toggleTheme } from '../index';
 
-    expect(1+1).toBe(2);
-})
-});
+describe('Theme functions', () => {
+  beforeEach(() => {
+    document.body.classList.remove('theme-light');
+    document.body.classList.remove('theme-dark');
+    document.body.classList.add = jest.fn();
+    document.body.classList.remove = jest.fn();
+    document.body.classList.replace = jest.fn();
+  });
 
-describe("Get Json data", () => {
+  it('setInitialTheme should add theme-light class to the body', () => {
+    setInitialTheme();
+    expect(document.body.classList.add).toHaveBeenCalledWith('theme-light');
+  });
 
-  test("should show elements in the json file", () => {
+  it('toggleTheme should toggle between theme-light and theme-dark', () => {
+    // Start with theme-light
+    document.body.classList.contains = jest.fn().mockReturnValue(false);
+    toggleTheme();
+    expect(document.body.classList.replace).toHaveBeenCalledWith('theme-light', 'theme-dark');
 
-    expect(1+1).toBe(2);
-})
+    // Switch to theme-dark
+    document.body.classList.contains = jest.fn().mockReturnValue(true);
+    toggleTheme();
+    expect(document.body.classList.replace).toHaveBeenCalledWith('theme-dark', 'theme-light');
+  });
 });
