@@ -1,0 +1,23 @@
+
+    [
+        {
+            "prayer": "Fajr",
+            "time": "05:00"
+        },
+        {
+            "prayer": "Dhuhr",
+            "time": "12:30"
+        },
+        {
+            "prayer": "Asr",
+            "time": "15:45"
+        },
+        {
+            "prayer": "Maghrib",
+            "time": "18:15"
+        },
+        {
+            "prayer": "Isha",
+            "time": "19:30"
+        }
+    ]
